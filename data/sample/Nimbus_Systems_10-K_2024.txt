@@ -1,0 +1,33 @@
+# Nimbus Systems — Form 10-K, Fiscal Year 2024
+
+Item 1. Business
+
+Nimbus Systems provides cloud-native data infrastructure and analytics software to
+enterprise customers on a subscription basis. Fiscal year 2024 ended January 31, 2025.
+
+Item 7. Management's Discussion and Analysis (MD&A)
+
+Revenue grew rapidly over the three-year period, rising from $8,500 million in
+fiscal 2022 to $12,000 million in fiscal 2024, a compound annual growth rate of
++18.8% CAGR. Management attributes the trend to strong net revenue retention and
+expansion into international markets. The outlook for fiscal 2025 is for continued
+high-teens revenue growth as the company scales its platform business.
+
+Key risks include intense competition from larger cloud platform vendors,
+dependence on a concentrated set of hyperscale hosting providers, and the cost of
+sustaining elevated research and development investment.
+
+Item 8. Financial Statements
+
+Consolidated Statements of Operations (in millions, fiscal year 2024).
+For fiscal year 2024, total revenue was $12,000 million, up sharply from the prior
+year. Gross profit was $9,000 million. Operating income reached $2,400 million. Net
+income for the year totaled $1,800 million.
+
+Consolidated Balance Sheet (in millions, as of January 31, 2025).
+Total assets stood at $20,000 million. Total current assets were $8,000 million.
+Total current liabilities were $4,000 million. Total debt was $3,000 million.
+Total shareholders' equity was $12,000 million. Cash and cash equivalents were
+$5,000 million.
+
+Research and development expense was $3,600 million for the fiscal year.

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# GridFin runtime artifacts
+.gridfin_cache/
+*.duckdb
+*.duckdb.wal
+data/index/
+.env
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# Editor / office temp & lock files
+.~lock.*#
+*.tmp
+*.swp
+*~
+
+# Redundant page scans of the technical doc (the PDF is the source of truth)
+docs/pg-*.jpg

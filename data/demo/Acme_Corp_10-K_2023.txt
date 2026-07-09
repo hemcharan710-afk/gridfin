@@ -1,0 +1,33 @@
+# Acme Corp — Form 10-K, Fiscal Year 2023
+
+Item 1. Business
+
+Acme Corp designs and manufactures industrial automation equipment for global
+manufacturing customers. Fiscal year 2023 ended December 31, 2023.
+
+Item 7. Management's Discussion and Analysis (MD&A)
+
+Revenue grew steadily over the three-year period, rising from $29,000 million in
+fiscal 2021 to $33,900 million in fiscal 2023, a compound annual growth rate of
++8.1% CAGR. Management attributes the trend to share gains in robotics and a full
+order book entering 2024. The outlook for fiscal 2024 is for continued
+mid-single-digit revenue growth and stable margins.
+
+Key risks include exposure to cyclical capital-equipment spending, supply-chain
+concentration in a small number of component vendors, and foreign-exchange
+volatility across European and Asian markets.
+
+Item 8. Financial Statements
+
+Consolidated Statements of Operations (in millions, fiscal year 2023).
+For fiscal year 2023, total revenue was $33,900 million, up from the prior year.
+Gross profit was $13,560 million. Operating income reached $5,400 million. Net
+income for the year totaled $4,200 million.
+
+Consolidated Balance Sheet (in millions, as of December 31, 2023).
+Total assets stood at $52,000 million. Total current assets were $18,000 million.
+Total current liabilities were $9,000 million. Total debt was $12,000 million.
+Total shareholders' equity was $24,000 million. Cash and cash equivalents were
+$6,000 million.
+
+Research and development expense was $2,400 million for the fiscal year.
