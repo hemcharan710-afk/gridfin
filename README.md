@@ -71,7 +71,15 @@ gridfin ask "Compare net profit margin and revenue trend across these filings"
 
 # Run the evaluation metrics
 gridfin eval
+
+# Point any command at a different corpus with --data
+gridfin ask "Compare gross margin across these filings" --data data/sec
 ```
+
+Three corpora ship with the repo: `data/demo/` (small synthetic filings, the
+default), `data/sample/` (a couple more synthetic filings plus a CSV), and
+`data/sec/` — the real FY2023 Form 10-Ks for Apple, Microsoft, and NVIDIA with
+ground-truth figures pulled from SEC EDGAR XBRL.
 
 With no API key set, GridFin runs in mock mode: the whole pipeline still runs end
 to end on the bundled demo dataset (`data/demo/`) with no network calls. See
@@ -174,13 +182,22 @@ number in the grid is either right or absent, never guessed.
 ## Evaluation
 
 ```bash
+# Default: the synthetic demo corpus
 gridfin eval
+
+# Against the real SEC filings (Apple, Microsoft, NVIDIA FY2023 10-Ks)
+gridfin eval --data data/sec --truth data/sec/ground_truth.json
 ```
 
 - Cell Numeric Accuracy — fraction of numeric cells that match ground truth. This is the number that matters most for a financial tool.
 - Grid Completion — fraction of cells filled rather than failed or empty.
 - Attribution Correctness — whether each cell's cited source actually contains its value.
 - RAGAS (faithfulness / relevancy / precision / recall) is available behind the optional `[eval]` extra.
+
+The real-SEC set grounds these metrics on actual 10-Ks rather than the toy corpus:
+figures in `data/sec/ground_truth.json` are the exact amounts each company reported
+in FY2023 (source: SEC EDGAR XBRL), and `tests/test_eval_real.py` asserts exact
+numeric accuracy and attribution against them.
 
 ## Light vs. heavy stack
 
@@ -190,7 +207,7 @@ dependencies are optional and the code falls back gracefully when they're missin
 | Concern | Default (light) | Heavy stack (`pip install -e ".[ml]"`) |
 |---|---|---|
 | Dense embeddings | hashed bag-of-words (numpy) | BGE via sentence-transformers |
-| ANN index | brute-force numpy cosine | FAISS |
+| ANN index | brute-force numpy cosine | FAISS (per-doc id selector keeps cells isolated) |
 | Reranking | RRF order | CrossEncoder |
 | Sparse | rank-bm25 | rank-bm25 |
 | LLM | deterministic mock | Claude (structured output) |
@@ -224,6 +241,8 @@ src/gridfin/
   cache/               # cell-level cache
   eval/                # evaluation metrics
 app/streamlit_app.py   # interactive grid
-data/demo/             # three demo filings + ground truth
-tests/                 # unit + integration tests
+data/demo/             # three synthetic demo filings + ground truth (default corpus)
+data/sample/           # extra synthetic filings + a CSV
+data/sec/              # real Apple / Microsoft / NVIDIA FY2023 10-Ks + EDGAR ground truth
+tests/                 # unit + integration tests, incl. real-SEC eval (test_eval_real.py)
 ```
