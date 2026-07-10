@@ -1,0 +1,51 @@
+{
+  "_comment": "Ground truth for the real-SEC eval set. Figures are the exact amounts each company reported in its FY2023 Form 10-K (source: SEC EDGAR XBRL). Ratios are derived from those figures. total_debt = long-term debt current + noncurrent.",
+  "Apple_Inc_10-K_2023-77780320": {
+    "revenue": 383285000000,
+    "net_income": 96995000000,
+    "gross_profit": 169148000000,
+    "operating_income": 114301000000,
+    "total_assets": 352583000000,
+    "current_assets": 143566000000,
+    "current_liabilities": 145308000000,
+    "total_debt": 105103000000,
+    "total_equity": 62146000000,
+    "net_profit_margin": 0.2530623426432028,
+    "gross_margin": 0.4413112957720756,
+    "current_ratio": 0.9880116717592975,
+    "debt_to_equity": 1.6912271103530396,
+    "return_on_equity": 1.5607601454639075
+  },
+  "Microsoft_Corp_10-K_2023-3a8e24de": {
+    "revenue": 211915000000,
+    "net_income": 72361000000,
+    "gross_profit": 146052000000,
+    "operating_income": 88523000000,
+    "total_assets": 411976000000,
+    "current_assets": 184257000000,
+    "current_liabilities": 104149000000,
+    "total_debt": 47237000000,
+    "total_equity": 206223000000,
+    "net_profit_margin": 0.3414623787839464,
+    "gross_margin": 0.6892008588349102,
+    "current_ratio": 1.76916725076573,
+    "debt_to_equity": 0.2290578645446919,
+    "return_on_equity": 0.35088714643856406
+  },
+  "NVIDIA_Corp_10-K_2023-769909e0": {
+    "revenue": 26974000000,
+    "net_income": 4368000000,
+    "gross_profit": 15356000000,
+    "operating_income": 4224000000,
+    "total_assets": 41182000000,
+    "current_assets": 23073000000,
+    "current_liabilities": 6563000000,
+    "total_debt": 10953000000,
+    "total_equity": 22101000000,
+    "net_profit_margin": 0.16193371394676356,
+    "gross_margin": 0.5692889449099132,
+    "current_ratio": 3.515617857687033,
+    "debt_to_equity": 0.4955884349124474,
+    "return_on_equity": 0.19763811592235644
+  }
+}

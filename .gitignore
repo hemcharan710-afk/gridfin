@@ -11,8 +11,6 @@ env/
 
 # GridFin runtime artifacts
 .gridfin_cache/
-*.duckdb
-*.duckdb.wal
 data/index/
 .env
 
@@ -27,6 +25,3 @@ data/index/
 *.tmp
 *.swp
 *~
-
-# Redundant page scans of the technical doc (the PDF is the source of truth)
-docs/pg-*.jpg

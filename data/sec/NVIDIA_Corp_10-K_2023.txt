@@ -1,0 +1,30 @@
+# NVIDIA Corporation — Form 10-K, Fiscal Year 2023
+
+Item 1. Business
+
+NVIDIA Corporation designs accelerated computing platforms and GPUs. This annual report covers fiscal year 2023.
+
+Item 7. Management's Discussion and Analysis (MD&A)
+
+Revenue moved from $16,675 million in fiscal 2021 to $26,974 million in fiscal 2023, a
+compound annual growth rate of +27.2% CAGR over the period. Management
+discusses the drivers of the trend and the outlook for the coming fiscal year in
+this section.
+
+Key risks include competition, supply-chain and component concentration, and
+macroeconomic and foreign-exchange volatility across the company's markets.
+
+Item 8. Financial Statements
+
+Consolidated Statements of Operations (in millions, fiscal year 2023).
+For fiscal year 2023, total revenue was $26,974 million. Gross profit was
+$15,356 million. Operating income reached $4,224 million. Net
+income for the year totaled $4,368 million.
+
+Consolidated Balance Sheet (in millions, fiscal year 2023).
+Total assets stood at $41,182 million. Total current assets were
+$23,073 million. Total current liabilities were $6,563 million.
+Total debt was $10,953 million. Total shareholders' equity was
+$22,101 million. Cash and cash equivalents were $3,389 million.
+
+Research and development expense was $7,339 million for the fiscal year.

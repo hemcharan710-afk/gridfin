@@ -1,0 +1,30 @@
+# Apple Inc. — Form 10-K, Fiscal Year 2023
+
+Item 1. Business
+
+Apple Inc. designs and sells consumer electronics, software and services. This annual report covers fiscal year 2023.
+
+Item 7. Management's Discussion and Analysis (MD&A)
+
+Revenue moved from $365,817 million in fiscal 2021 to $383,285 million in fiscal 2023, a
+compound annual growth rate of +2.4% CAGR over the period. Management
+discusses the drivers of the trend and the outlook for the coming fiscal year in
+this section.
+
+Key risks include competition, supply-chain and component concentration, and
+macroeconomic and foreign-exchange volatility across the company's markets.
+
+Item 8. Financial Statements
+
+Consolidated Statements of Operations (in millions, fiscal year 2023).
+For fiscal year 2023, total revenue was $383,285 million. Gross profit was
+$169,148 million. Operating income reached $114,301 million. Net
+income for the year totaled $96,995 million.
+
+Consolidated Balance Sheet (in millions, fiscal year 2023).
+Total assets stood at $352,583 million. Total current assets were
+$143,566 million. Total current liabilities were $145,308 million.
+Total debt was $105,103 million. Total shareholders' equity was
+$62,146 million. Cash and cash equivalents were $29,965 million.
+
+Research and development expense was $29,915 million for the fiscal year.

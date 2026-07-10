@@ -1,17 +1,15 @@
-"""Grid store: flatten Pydantic cells into DuckDB.
+"""Grid store: flatten Pydantic cells into a table and export it.
 
-The filled grid is written one row per cell so it can be queried with SQL (by
-route, confidence, or document) and exported.
+The filled grid is turned into one row per cell (document, column, value, route,
+confidence, source) and written to CSV.
 """
 
 from __future__ import annotations
 
 from pathlib import Path
 
-import duckdb
 import pandas as pd
 
-from gridfin.config import get_settings
 from gridfin.models import Grid
 
 
@@ -41,19 +39,6 @@ def grid_to_dataframe(grid: Grid) -> pd.DataFrame:
                 }
             )
     return pd.DataFrame.from_records(records)
-
-
-def persist_grid(grid: Grid, db_path: Path | None = None, table: str = "cells") -> Path:
-    db_path = db_path or get_settings().grid_db_path
-    df = grid_to_dataframe(grid)  # noqa: F841 — referenced by DuckDB below
-    con = duckdb.connect(str(db_path))
-    try:
-        con.execute(f"CREATE TABLE IF NOT EXISTS {table} AS SELECT * FROM df LIMIT 0")
-        con.execute(f"DELETE FROM {table} WHERE document IN (SELECT DISTINCT document FROM df)")
-        con.execute(f"INSERT INTO {table} SELECT * FROM df")
-    finally:
-        con.close()
-    return Path(db_path)
 
 
 def export_csv(grid: Grid, path: str | Path) -> Path:

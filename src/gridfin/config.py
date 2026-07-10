@@ -55,7 +55,6 @@ class Settings(BaseSettings):
 
     # --- Paths -------------------------------------------------------------
     cache_dir: Path = PROJECT_ROOT / ".gridfin_cache"
-    grid_db_path: Path = PROJECT_ROOT / "gridfin_grid.duckdb"
     data_dir: Path = PROJECT_ROOT / "data"
 
     @property

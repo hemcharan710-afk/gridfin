@@ -89,7 +89,7 @@ The grid for *"Compare net margin & debt-to-equity across these filings"* (🔵 
 
 ## 3. System context
 
-How GridFin sits between its inputs (filings, a question, optional model provider) and its outputs (an interactive grid, a CSV export, a queryable DuckDB table).
+How GridFin sits between its inputs (filings, a question, optional model provider) and its outputs (an interactive grid and a CSV export).
 
 ```mermaid
 flowchart TB
@@ -113,14 +113,13 @@ flowchart TB
         UI["Streamlit grid UI<br/>app/streamlit_app.py"]:::out
         CLI["CLI: gridfin info | ask | eval"]:::out
         CSV["CSV export"]:::out
-        DUCK["DuckDB cells table<br/>(SQL over cells)"]:::out
     end
 
     FILES --> FRONT
     QUESTION --> BACK
     KEY -.-> CLAUDE
     BACK <-.->|"structured output<br/>(mock if no key)"| CLAUDE
-    BACK --> UI & CLI & CSV & DUCK
+    BACK --> UI & CLI & CSV
 
     classDef in fill:#e0f2fe,color:#075985,stroke:#0284c7;
     classDef opt fill:#f4f4f5,color:#52525b,stroke:#a1a1aa,stroke-dasharray:4 3;
@@ -773,7 +772,7 @@ src/gridfin/
     decompose.py       # L5  question → GridPlan
     cell_engine.py     # L6  fan-out: 3 routes, 2 waves, semaphore, retry
     verify.py          # L9  cross-cell checks + synthesize
-    store.py           # grid → pandas → DuckDB / CSV
+    store.py           # grid → pandas → CSV export
   retrieval/retriever.py  # L7  RRF + rerank, scoped to one doc
   calc/engine.py       # L8  deterministic formula library (the boundary)
   cache/cell_cache.py  # cell-level diskcache
@@ -825,7 +824,7 @@ flowchart LR
 - **Exit:** correct grids on a held-out set of 10+ real 10-Ks.
 
 ### Phase 3 — Scale & cost
-- Persist filled grids via `grid/store.py` (DuckDB) and add a `gridfin query` command for SQL over cells (by route, confidence, document).
+- Persist filled grids to a queryable store and add a `gridfin query` command for filtering cells (by route, confidence, document).
 - True streaming UI: push `on_cell` callbacks to the browser as cells complete (currently filled then rendered).
 - Batch evaluation across a question suite with regression tracking.
 - **Exit:** a 50-doc × 8-column grid completes within target wall-clock and cost budgets.

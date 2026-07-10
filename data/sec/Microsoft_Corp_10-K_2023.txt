@@ -1,0 +1,30 @@
+# Microsoft Corporation — Form 10-K, Fiscal Year 2023
+
+Item 1. Business
+
+Microsoft Corporation develops and licenses software, cloud services and devices. This annual report covers fiscal year 2023.
+
+Item 7. Management's Discussion and Analysis (MD&A)
+
+Revenue moved from $168,088 million in fiscal 2021 to $211,915 million in fiscal 2023, a
+compound annual growth rate of +12.3% CAGR over the period. Management
+discusses the drivers of the trend and the outlook for the coming fiscal year in
+this section.
+
+Key risks include competition, supply-chain and component concentration, and
+macroeconomic and foreign-exchange volatility across the company's markets.
+
+Item 8. Financial Statements
+
+Consolidated Statements of Operations (in millions, fiscal year 2023).
+For fiscal year 2023, total revenue was $211,915 million. Gross profit was
+$146,052 million. Operating income reached $88,523 million. Net
+income for the year totaled $72,361 million.
+
+Consolidated Balance Sheet (in millions, fiscal year 2023).
+Total assets stood at $411,976 million. Total current assets were
+$184,257 million. Total current liabilities were $104,149 million.
+Total debt was $47,237 million. Total shareholders' equity was
+$206,223 million. Cash and cash equivalents were $34,704 million.
+
+Research and development expense was $27,195 million for the fiscal year.

@@ -113,6 +113,7 @@ class GridFin:
             "chunks": len(self.chunks),
             "numeric_facts": len(self.numeric_store),
             "embedding_backend": self.index.backend,
+            "ann_backend": self.index.ann_backend,
             "reranker_backend": self.retriever.reranker_backend,
             "llm": "live" if self.llm.live else "mock",
         }
